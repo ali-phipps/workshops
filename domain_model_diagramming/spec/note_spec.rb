@@ -16,5 +16,12 @@ describe Note do
 
   end
 
+  describe "#create_tag" do
+    it 'create a tag for a note' do
+      note.create_tag("a test tag")
+      expect(note.tag).to eq "a test tag"
+    end
+  end
+
 
 end
